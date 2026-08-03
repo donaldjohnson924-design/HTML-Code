@@ -32,10 +32,11 @@ h1 {
 
 .subheader {
     font-size: 36px;
+    margin: 16px 0 24px 0;
 }
 
 button {
-    background-color #05c7cf;
+    background-color: #05c7cf;
     color: white;
     border: none;
     padding: 8px 16px; 
@@ -43,7 +44,7 @@ button {
     cursor: pointer;
 }
 a {
-    color #000;
+    color: #000;
     font-size: 24px;
     font-weight: bold;
 }
@@ -59,3 +60,152 @@ li {
 list-style-type: none;
 padding-left: 16px;
 }
+
+#about {
+    padding: 48px 0; 
+    background-color: #f8ffdc;
+}
+
+.row {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#about,
+#discord,
+#contact {
+    footer {
+        padding: 48px 0;
+}
+
+ /*
+
+ABOUT
+
+*/
+#about {
+    background-color: #f8ffdc;  
+
+h2 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.section__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about__img--wrapper {
+    padding: 0 24px;
+
+}
+
+img {
+    width: 100%;
+}
+
+.section__description--wrapper {
+    width: 60%;
+
+}
+    
+.about__img--wrapper,
+.section__description--wrapper {
+padding: 0 24px;
+
+}
+
+/*
+
+DISCORD
+
+*/
+
+#discord {
+    background-color: #cefeff;
+}
+
+/*
+
+CONTACT
+
+*/
+
+#contact {
+    background-color: #dce9ff;
+
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+     
+}
+
+input, textarea {
+    margin-bottom: 24px;
+    font-size: 20px;
+    padding: 6px 12px;
+
+}
+/*
+
+FOOTER
+
+*/
+
+footer {
+    background-color: #aaf5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__logo {
+    max-width: 480px;
+    margin-bottom: 16px;
+}
+.footer__links {
+    margin-bottom: 32px;
+}
+
+.footer__link {
+    padding: 0 16px;
+}
+
+.project__description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 550px;
+    padding:0 20px;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 300ms ease, transform 300ms ease;
+    z-index: 1;
+}
+
+.project__description--para {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.project:hover .project__description {
+    opacity: 1;
+}
+
